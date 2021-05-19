@@ -4,8 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import com.fasterxml.jackson.module.kotlin.readValue
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
-import shared.cards.LeaderCard
-import shared.cards.UnitCard
+import entity.card.LeaderCard
+import entity.card.UnitCard
 import java.io.File
 
 data class CardsImport(

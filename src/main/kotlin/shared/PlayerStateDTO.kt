@@ -1,6 +1,6 @@
 package shared
 
-import shared.cards.UnitCard
+import entity.card.UnitCard
 import shared.enums.FactionsEnum
 import shared.enums.PhasesEnum
 

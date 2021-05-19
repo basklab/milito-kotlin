@@ -1,17 +1,19 @@
-package shared
+package entity
 
-import shared.cards.UnitCard
+import entity.card.UnitCard
+import entity.stock.Deck
+import entity.stock.Hand
 import shared.enums.FactionsEnum
 import shared.enums.PhasesEnum
 
 data class PlayerState(
-    val deck: DeckDTO,
-    val dead_pile: DeckDTO,
-    val discard_pile: DeckDTO,
+    val deck: Deck,
+    val deadPile: Deck,
+    val discardPile: Deck,
     val faction: FactionsEnum,
-    val hand: HandDTO,
-    val player_id: Int,
-    val row_1: List<UnitCard?>,
-    val row_2: List<UnitCard?>,
+    val hand: Hand,
+    val playerId: Int,
+    val row1: List<UnitCard?>,
+    val row2: List<UnitCard?>,
     val state: PhasesEnum,
 )

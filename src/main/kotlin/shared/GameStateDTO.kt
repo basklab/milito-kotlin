@@ -7,5 +7,5 @@ data class GameStateDTO(
     val phase: PhasesEnum,
     val current_player: PlayerStateDTO,
     val another_player: PlayerStateDTO,
-    val battle_state: AttackStateDTO?,
+    val battle_state: BattleStateDTO?,
 )

@@ -1,4 +1,4 @@
-package shared.cards
+package entity.card
 
 interface Card {
     val id: Int?
