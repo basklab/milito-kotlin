@@ -1,7 +1,6 @@
 package shared.cards
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import shared.cards.Card
 
 data class LeaderCard(
     override val id: Int?,
