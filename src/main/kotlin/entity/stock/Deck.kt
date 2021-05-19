@@ -4,4 +4,8 @@ import entity.card.Card
 
 data class Deck(
     override val cards: List<Card>,
-) : Stock
+) : Stock {
+    fun push(card: Card) {
+
+    }
+}

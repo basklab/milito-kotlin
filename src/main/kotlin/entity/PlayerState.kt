@@ -12,8 +12,8 @@ data class PlayerState(
     val discardPile: Deck,
     val faction: FactionsEnum,
     val hand: Hand,
-    val playerId: Int,
-    val row1: List<UnitCard?>,
-    val row2: List<UnitCard?>,
+    var playerId: Int,
+    val row1: MutableList<UnitCard?>,
+    val row2: MutableList<UnitCard?>,
     val state: PhasesEnum,
 )

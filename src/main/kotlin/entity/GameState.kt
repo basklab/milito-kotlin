@@ -1,11 +1,15 @@
 package entity
 
+import entity.battle.BattleState
 import shared.enums.PhasesEnum
+import shared.enums.StepsEnum
 
 data class GameState(
-    val neutral: List<Int>,
-    val phase: PhasesEnum,
-    val currentPlayer: PlayerState,
-    val anotherPlayer: PlayerState,
-    val battleState: AttackState?,
-)
+    var neutral: List<Int>,
+    var phase: PhasesEnum,
+    var currentPlayer: PlayerState,
+    var anotherPlayer: PlayerState,
+    var battleState: BattleState?,
+    var step: StepsEnum,
+    var deployPenalty: Int,
+    )
